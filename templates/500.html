@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Error 505</title>
+	</head>
+	<body>
+	<h1>Internal Server Error</h1>
+		<!-- Sentry JS SDK 2.1.+ required -->
+		<script src="https://cdn.ravenjs.com/2.3.0/raven.min.js"></script>
+		
+		{% if request.sentry.id %}
+		<script>
+		Raven.showReportDialog({
+			eventId: '{{ request.sentry.id }}',
+			
+			// use the public DSN (dont include your secret!)
+			dsn: 'publicsentrydsn'
+		});
+		</script>
+		{% endif %}
+		
+	</body>
+</html>

@@ -1,0 +1,8 @@
+tests
+tests.py
+tests.pyc
+dev.py
+dev.pyc
+dev.txt
+node_modules
+staticfiles
