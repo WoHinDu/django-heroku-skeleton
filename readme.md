@@ -52,7 +52,7 @@ pip install django
 
 Navigate in the console to the folder where you want to have your Django project. Then create your project and your app.
 ```
-django-admin startproject --template=https://github.com/WoHinDu/django-heroku-template/archive/master.zip  --name Procfile,requirements.txt myproject
+django-admin startproject --template=https://github.com/WoHinDu/django-heroku-skeleton/archive/master.zip  --name Procfile,requirements.txt myproject
 cd myproject
 python manage.py startapp myapp
 ```
@@ -224,7 +224,6 @@ and activate release tracking
 - Use a Content-Delivery Network with [WhiteNoise](http://whitenoise.evans.io/en/stable/django.html#use-a-content-delivery-network)
 - Include [caching](https://devcenter.heroku.com/articles/django-memcache) and 
 [compressing](https://github.com/django-compressor/django-compressor)
-- Setup [New Relic](https://elements.heroku.com/addons/newrelic)
 - Use an asynchronous task queue like [Celery](http://docs.celeryproject.org/en/latest/django/first-steps-with-django.html)
 in connection with [CloudAMQP](https://elements.heroku.com/addons/cloudamqp)
 - Serve your static assets via [Amazon S3](https://github.com/kennethreitz/dj-static)
