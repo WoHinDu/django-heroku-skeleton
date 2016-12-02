@@ -85,7 +85,7 @@ MIDDLEWARE = [
 # Email setting 
 # See: https://docs.djangoproject.com/en/{{ docs_version }}/topics/email/#email-backends
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 ##########
 

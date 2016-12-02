@@ -58,7 +58,7 @@ python manage.py startapp myapp
 ```
 
 - Open `myproject\settings\base.py` in your editor and add `'myapp.apps.MyappConfig',` in the 
-first line from `INSTALLED_APPS`.
+first line from `INSTALLED_APPS`. Note: You have to replace myapp 2x times.
 - Open `myproject\settings\prod.py` in your editor and replace `myapp` in LOGGING
 - Open `myproject\settings\dev.py` in your editor and replace `myapp` in LOGGING
 

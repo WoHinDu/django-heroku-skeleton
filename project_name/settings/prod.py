@@ -106,6 +106,8 @@ SECURE_SSL_REDIRECT = True
 # Email settings
 # See: https://docs.djangoproject.com/en/{{ docs_version }}/ref/settings/#email
 
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
 EMAIL_HOST = 'smtp.sendgrid.net'
 
 EMAIL_HOST_USER = os.environ.get('SENDGRID_USERNAME')
